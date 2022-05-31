@@ -1,7 +1,29 @@
 import axios from 'axios'
 
 const sendVote = () =>{
-  return this.name
+  console.log(localStorage.getItem('user'))
+  if (localStorage.getItem("user")){ 
+    axios
+      .post(
+        "/auth/checkVoteDB",
+        {
+          cedula: localStorage.getItem("user"),
+        },
+        { withCredentials: true }
+      )
+      .then((res) => {
+        console.log(res);
+        if (res.data.status == "1") {
+          alert("ACABAS DE VOTAR");
+        } else if(res.data.status == "0") {
+          alert("YA VOTASTE UNA VEZ");
+        }else{
+          alert("ERROR")
+        }
+      });
+  }else{
+    alert("NO ESTAS LOGEADO")
+  }
 } 
 
 const VoteCard = ({name, description, party, img}) => {

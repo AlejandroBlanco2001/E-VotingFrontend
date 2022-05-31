@@ -38,7 +38,7 @@ const Login = () => {
         )
         .then((res) => {
           if (res.data.message === "OK") {
-            localStorage.setItem("user", data.username);
+            localStorage.setItem("user", data.cedula);
             navigate("../Vote", { replace: true });
           } else {
             swal.fire({
