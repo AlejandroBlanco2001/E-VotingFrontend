@@ -71,18 +71,9 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <Link
-              activeClass="active"
-              to="vote"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
               <a href="https://vot-e-front.herokuapp.com/vote">
                 <em>VOTA</em>
               </a>
-            </Link>
           </li>
         </ul>
       </nav>
