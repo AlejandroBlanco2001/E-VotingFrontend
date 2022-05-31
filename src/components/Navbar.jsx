@@ -70,11 +70,6 @@ const Navbar = () => {
               <em>RESULTADOS</em>
             </a>
           </li>
-          <li>
-            <a href="https://vot-e-front.herokuapp.com/vote">
-              <em>RESULTADOS</em>
-            </a>
-          </li>
         </ul>
       </nav>
     );
