@@ -1,0 +1,420 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+$main-font: "Poppins";
+$breakpoint: 800px;
+$blueMain: #4B6190;
+
+html, body{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    em{
+        color: $blueMain;
+        font-weight: bold;
+    }
+}
+
+h2,h4{
+    font-family: $main-font;
+    color:black;
+}
+
+body{
+    background-color: white;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.results{
+    display: block;
+    margin-top: 30px;
+    margin-left: 460px;
+    text-align: center;
+    height: 800px;
+    width: 800px;
+}
+
+.sideA{
+    flex: 0.5;
+}
+
+.sideB{
+    flex: 0.5;
+}
+
+.block{
+    display: inline-block;
+    margin-top: 100px;
+    width: 100%;
+    //box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    height: 650px;
+}
+
+.OutisdeNames{
+    margin-top:40px;
+    text-align: center;
+}
+
+.imageContainer{
+    position: relative; 
+    top:20px;
+    left:50px;
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 50%;
+}
+
+.verticalLine1{
+    border-left: 1px solid grey;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.candidatesCard{
+    text-align: center;
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+
+    img{ 
+        width: 100%; 
+        height: auto;
+    }
+    
+    .candidateText{
+        margin-top: 50px
+    }
+
+    &:hover{
+        transition: all 1s;
+        color: white !important;
+        zoom : 110%;
+        background-color: #3366CC;
+    }
+}
+
+.candidateList{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.infoCard{
+    width: 100%px;
+    padding: 10px;
+    text-align: center;
+
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    img{ 
+        width: 100px;
+        height: 100px;
+    }
+
+    &:hover{
+        transition: all 0.3s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+}
+
+#root{
+    height: 100vh;
+}
+
+#voteSection{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#BarranquillaGov{
+    background: #3366CC;
+
+    object{
+        margin-left: 100px;
+        width: 138px;
+        height: 30px;
+    }
+}
+
+#Footer{
+    margin-top: 60px;
+    width: 100%;
+    height: 70px;
+    display: block;
+    background-color: #E1F6FB;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#carouselBlock{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    margin-top:20px;
+    margin-left: 450px;
+    width: 50%;
+}
+
+.carousel{
+    width: 2000px;
+    h3{
+        text-shadow: 4px 4px 2px rgba(146,144,144,0.6);
+    }
+
+    p{
+        color: white;
+        text-shadow: 4px 4px 2px rgba(146,144,144,0.6);
+    }
+}
+
+.carousel-item{
+    img{
+        width: 100%;
+    }
+}
+
+#loginForm{
+    display:flex;
+    height: 500px;
+    width: 900px;
+    flex-direction: row;
+    gap:30px;
+    justify-content: space;
+    align-items: center;
+    margin-left: 490px;
+    margin-top: 11%;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+    form{
+        margin-left: -10px;
+    }
+
+    img{
+        margin-left: 40px;
+        height: 100%;
+        width: 500px;
+    }
+
+    h3{
+        font-family: $main-font;
+        color: black;
+        margin-top: 20px;
+    }
+
+    button{
+        margin-top: 20px;
+        background-color: #0061AC;
+        color: white;
+        font-family: $main-font;
+        margin-left: 20px;
+    }
+
+    input{
+        color:black;
+        font-size: 20px
+    }
+}
+
+#textCarrousel{
+    text-align: justify;
+    margin-left: 60px;
+    width: 500px;
+}
+
+#Carrousel{
+    height: 1250px;
+    width: 1250px;
+    
+}
+
+@media (max-width: $breakpoint){
+    #steps{
+        flex-direction: column;
+    }
+}
+
+#stepsBlock{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    figure{
+        width: 50%;
+        
+        img{
+            width: 120% ;
+        }
+    }
+}
+
+#steps {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    place-content: center;
+    justify-content: center;
+    place-items: center;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+#cardTwoFactor{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+    p{
+        font-size:20px;
+        
+    }
+
+}
+
+#TwoFactorText{
+    background-color:#dbedff ;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    width: 50%;
+    padding: 20px;
+}
+
+#cardAboutUs{
+    display: flex;
+    width: 100%;
+    
+    h2{
+        color: black; 
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        overflow-wrap: break-word; 
+    }
+}
+
+#imageTwoFactor{
+    width: 60%;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#imageAboutUs{
+    width: 100%;
+    height: 100%;
+}   
+
+
+#AboutUsText{
+    margin-right: 50px;
+    margin-top: 100px;
+    box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+
+    background-color:   #dbedff;
+    width: 50%;
+    padding: 20px;
+    height: 80%;
+    text-align: center;
+    p{
+        text-align: justify;
+    }
+}
+
+.cardSmartContract{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    h2{
+        color: black; 
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        overflow-wrap: break-word; 
+    }
+}
+
+#SmartContractText{
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+
+    background-color:   #dbedff;
+    width: 50%;
+    padding: 20px;
+    height: 80%;
+    text-align: center;
+    p{
+        text-align: justify;
+    }
+}
+
+#imageSmartContract{
+    width: 20%;
+    height: 100%;
+}
+
+#imgBlockchain{
+    margin-left: 40px;
+    margin-top:20px;
+    width: 20%;
+    height: 325px;
+}
+
+#cardVote{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    li{
+        font-family: $main-font;
+        font-weight: 400;
+        float: left;
+        margin:20px;
+        padding: 10px;
+
+        
+
+    }
+    li:hover{
+        border: 1px solid gray;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
