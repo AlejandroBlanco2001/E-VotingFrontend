@@ -71,9 +71,9 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-              <a href="https://vot-e-front.herokuapp.com/vote">
-                <em>VOTA</em>
-              </a>
+            <a href="https://vot-e-front.herokuapp.com/vote">
+              <em>RESULTADOS</em>
+            </a>
           </li>
         </ul>
       </nav>
