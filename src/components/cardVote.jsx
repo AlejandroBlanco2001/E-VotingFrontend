@@ -1,7 +1,7 @@
 import axios from 'axios'
+import swal from "sweetalert2";
 
 const sendVote = () =>{
-  console.log(localStorage.getItem('user'))
   if (localStorage.getItem("user")){ 
     axios
       .post(
@@ -12,17 +12,40 @@ const sendVote = () =>{
         { withCredentials: true }
       )
       .then((res) => {
-        console.log(res);
         if (res.data.status == "1") {
-          alert("ACABAS DE VOTAR");
+          swal.fire({
+            icon: "succesfull",
+            title: "Thanks",
+            text: "Tu voto ha sido registrado, muchas gracias por ejercer tu derecho al voto",
+            showConfirmButton: true,
+          });
         } else if(res.data.status == "0") {
-          alert("YA VOTASTE UNA VEZ");
+          swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "¡Ya has votado una vez, no puedes volver a votar!",
+            timer: 8000,
+            showConfirmButton: false,
+          });
         }else{
-          alert("ERROR")
+          swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Algo salio mal!",
+            timer: 8000,
+            showConfirmButton: false,
+          });
+
         }
       });
   }else{
-    alert("NO ESTAS LOGEADO")
+    swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Para votar, debes ingresar sesion",
+      timer: 8000,
+      showConfirmButton: false,
+    })
   }
 } 
 
