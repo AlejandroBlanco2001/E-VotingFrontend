@@ -12,8 +12,9 @@ const Vote = () => {
     axios
       .get("/info/candidates")
       .then((res) => {
-        setData(res.data);
+        setData(res.data.fields);
         setLoading(false);
+        console.log(res)
       })
       .catch((err) => {
         console.error(err);

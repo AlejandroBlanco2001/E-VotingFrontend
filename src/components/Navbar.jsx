@@ -79,7 +79,7 @@ const Navbar = () => {
               offset={-70}
               duration={500}
             >
-              <a href="https://vot-e-front.herokuapp.com/resultado">
+              <a href="https://vot-e-front.herokuapp.com/vote">
                 <em>VOTA</em>
               </a>
             </Link>
