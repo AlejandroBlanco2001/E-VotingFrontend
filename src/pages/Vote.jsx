@@ -34,13 +34,13 @@ const Vote = () => {
       <div class="candidateList">
         <h2>Selecciona tu candidato</h2>
         {data.map((item, index) => {
-          let {nombre, partido, imagen, descripcion } = item;
+          let {nombre, partido, imagen, descripción } = item;
           return (
             <CardVote
               key={index}
               name={nombre}
               party={partido}
-              description={descripcion}
+              description={descripción}
               img={imagen}
             />
           );
