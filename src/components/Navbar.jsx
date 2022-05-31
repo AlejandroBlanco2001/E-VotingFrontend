@@ -1,4 +1,5 @@
 import { Link } from 'react-scroll'
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -65,6 +66,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <a href="https://vot-e-front.herokuapp.com/resultado">
+              <em>RESULTADOS</em>
+            </a>
+          </li>
+          <li>
             <Link
               activeClass="active"
               to="vote"
@@ -73,7 +79,9 @@ const Navbar = () => {
               offset={-70}
               duration={500}
             >
-              <em>VOTA</em>
+              <a href="https://vot-e-front.herokuapp.com/resultado">
+                <em>VOTA</em>
+              </a>
             </Link>
           </li>
         </ul>

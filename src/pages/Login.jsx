@@ -9,7 +9,6 @@ import Gov from "../assets/col.svg";
 import axios from "axios";
 
 const Login = () => {
-  const [error, setError] = useState(false)
   const [data, setData] = useState({})
   const [action, setAction] = useState(true)
 

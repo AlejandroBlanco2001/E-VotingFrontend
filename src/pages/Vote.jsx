@@ -3,12 +3,10 @@ import CardVote from "../components/cardVote";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Gov from "../assets/col.svg";
-import { Button } from "react-bootstrap";
 
 const Vote = () => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
-  const [cards, setCards] = useState();
 
   useEffect(() => {
     axios
