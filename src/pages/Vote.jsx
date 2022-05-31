@@ -12,9 +12,9 @@ const Vote = () => {
     axios
       .get("/info/candidates")
       .then((res) => {
-        setData(res.data.fields);
+        setData(res.data.rows);
         setLoading(false);
-        console.log(res)
+        console.log(loading)
       })
       .catch((err) => {
         console.error(err);
@@ -34,14 +34,14 @@ const Vote = () => {
       <div class="candidateList">
         <h2>Selecciona tu candidato</h2>
         {data.map((item, index) => {
-          let { name, party, description, image } = item;
+          let {nombre, partido, imagen, descripcion } = item;
           return (
             <CardVote
-              key={item}
-              name={name}
-              party={party}
-              description={description}
-              img={image}
+              key={index}
+              name={nombre}
+              party={partido}
+              description={descripcion}
+              img={imagen}
             />
           );
         })}
