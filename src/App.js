@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Start from "./client/pages/start"
-import Vote from "./client/pages/Vote"
-import Result from "./client/pages/Result"
-import Login from "./client/pages/Login"
+import Start from "./pages/start"
+import Vote from "./pages/Vote"
+import Result from "./pages/Result"
+import Login from "./pages/Login"
 
 function App() {
   return (
