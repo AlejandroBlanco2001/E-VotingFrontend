@@ -130,7 +130,7 @@ const Start = () => {
             ></img>
           </div>
         </Element>
-        <Element class="block" name="about">
+        <Element class="block" name="about" id="aboutUsE">
           <div id="cardAboutUs">
             <div class="sideB">
               <img id="imageAboutUs" src={About} alt="about_us_image"></img>

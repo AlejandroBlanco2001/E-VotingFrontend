@@ -12,7 +12,7 @@ const Navbar = () => {
             <a href="#smart">SMART CONTRACT</a>
           </li>
           <li>
-            <a href="#test">SOBRE NOSOTROS</a>
+            <a href="#aboutUsE">SOBRE NOSOTROS</a>
           </li>
           <li>
             <a href="/resultado">
