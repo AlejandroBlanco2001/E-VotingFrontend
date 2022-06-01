@@ -1,72 +1,27 @@
-import { Link } from 'react-scroll'
-
 const Navbar = () => {
     return (
       <nav id="main-nav">
         <ul>
           <li>
-            <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              HOME
-            </Link>
+            <a href="#stepsBlock">COMO VOTAR</a>
           </li>
           <li>
-            <Link
-              activeClass="active"
-              to="guide"
-              spy={true}
-              smooth={true}
-              offset={-190}
-              duration={500}
-            >
-              COMO VOTAR
-            </Link>
+            <a href="#2fa">2FA</a>
           </li>
           <li>
-            <Link
-              activeClass="active"
-              to="two"
-              spy={true}
-              smooth={true}
-              offset={-210}
-              duration={500}
-            >
-              2FA
-            </Link>
+            <a href="#smart">SMART CONTRACT</a>
           </li>
           <li>
-            <Link
-              activeClass="active"
-              to="blockchain"
-              spy={true}
-              smooth={true}
-              offset={-240}
-              duration={500}
-            >
-              SMART CONTRACT
-            </Link>
+            <a href="#test">SOBRE NOSOTROS</a>
           </li>
           <li>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-270}
-              duration={500}
-            >
-              SOBRE NOSOTROS
-            </Link>
-          </li>
-          <li>
-            <a href="https://vot-e-front.herokuapp.com/resultado">
+            <a href="/resultado">
               <em>RESULTADOS</em>
+            </a>
+          </li>
+          <li>
+            <a href="/vote">
+              <em>VOTA</em>
             </a>
           </li>
         </ul>

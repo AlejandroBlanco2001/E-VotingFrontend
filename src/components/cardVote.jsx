@@ -20,6 +20,7 @@ const VoteCard = ({name, description, party, img}) => {
         )
         .then((res) => {
           if (res.data.status === 1) {
+            localStorage.removeItem('user')
             swal.fire({
               icon: "succesfull",
               title: "Thanks",

@@ -18,7 +18,7 @@ import Blockchain from "../assets/blockchain.png"
 
 const Start = () => {
     return (
-      <div>
+      <div id="home">
         <div id="BarranquillaGov">
           <object data={Gov} alt="LogoGov"></object>
         </div>
@@ -75,7 +75,7 @@ const Start = () => {
             </div>
           </div>
         </Element>
-        <Element class="block" name="two">
+        <Element class="block" name="two" id="2fa">
           <div id="cardTwoFactor">
             <div class="sideA" id="TwoFactorText">
               <h2>FACTOR DE DOBLE AUTENTICACIÓN</h2>
@@ -101,7 +101,7 @@ const Start = () => {
             </div>
           </div>
         </Element>
-        <Element class="block" name="blockchain">
+        <Element class="block" name="blockchain" id="smart">
           <div class="cardSmartContract">
             <img
               id="imgBlockchain"
@@ -152,7 +152,7 @@ const Start = () => {
             </div>
           </div>
         </Element>
-        <Element class="block" name="vote">
+        <Element class="block" name="vote" id="letVote">
           <div id="cardVote">
             <h3>
               Comienza a ejercer tu <em>derecho</em> de voto por tu candidato
